@@ -14,7 +14,7 @@ pipeline{
 				 sh "docker stop server"
 				 sh" docker rm server"
 				  sh " docker run -itdp 80:80 --name server httpd"
-				 sh "docker cp /Docker/index.html server:/usr/local/apache2/htdocs"
+				 sh "docker cp Docker/index.html server:/usr/local/apache2/htdocs"
 				 sh "chmod -R 777 index.html"
 				  
 				  
